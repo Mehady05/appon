@@ -1,0 +1,1127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+/* end common css  */
+
+/*-------------------------------------------- first part----------------------------------------------------------  */
+/* preloader */
+.preload {
+    position: fixed;
+    z-index: 999999;
+    background-color: #744fa0;
+    height: 100vh;
+    width: 100%;
+}
+
+.main_preload {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+/* 01 start nv-br  */
+
+.navbar {
+    transition: all .3s linear;
+}
+
+.navbar.navbar-expand-lg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-left: 43px;
+    padding: 90px 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-family: raleway;
+    color: #d1d1d1 !important;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    top: 26px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transition: all .3s linear;
+    background: #744fa0;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #744fa0 !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    width: 15px;
+    color: #744fa0 !important;
+}
+
+
+
+
+/* sticky */
+
+
+
+.navbar.navbar-expand-lg.sticky {
+    position: fixed;
+    background: #777777;
+    width: 100%;
+    left: 0;
+    top: 0;
+    animation: stickyAni 2s;
+}
+
+.navbar.sticky .navbar-nav .nav-item {
+    padding: 30px 0;
+}
+
+@keyframes stickyAni {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+
+/* right button  */
+.btn {
+    background: #744fa0;
+    margin-left: 30px;
+    padding: 11px 21px;
+    margin-right: 0px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #d1d1d1;
+    text-transform: capitalize;
+    font-family: 'Raleway';
+    padding: 0;
+    font-weight: 700;
+}
+
+/* 01 end nv-br  */
+
+
+/* 01 start banner area  */
+.bg_theme {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.slide-home {
+    height: 100vh;
+}
+
+.slide_overlay {
+    background: rgb(0, 0, 0, .70);
+    width: 100%;
+    height: 100%;
+}
+
+.all_text_wrap {
+    padding-top: 236px;
+}
+
+.text_heading {
+    padding: 30px 0 30px 0;
+}
+
+.text_heading h2 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 56px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.text_heading h2 span {
+    color: #744fa0;
+}
+
+.text_heading h5 {
+    font-size: 32px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.text_heading h5::before {
+    content: '';
+    top: 100%;
+    width: 200px;
+    height: 2px;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    margin-top: 37px;
+}
+
+.inner_pera p {
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: open sans;
+    line-height: 24px;
+    margin-left: 17px;
+    text-align: right;
+    padding-bottom: 60px;
+}
+
+/* two anc btn */
+.inner_pera a {
+    padding: 10px 20px;
+    background: #ffffff;
+    transition: all .3s linear;
+    border-radius: 3px;
+
+}
+
+.inner_pera a:hover {
+    background: #744fa0;
+    color: #ffffff;
+}
+
+.two_btn span {
+    display: block;
+}
+
+.two_btn i {
+    font-size: 33px;
+    color: #353535;
+    transition: all .3s linear;
+    padding-right: 10px;
+}
+
+.two_btn h3 {
+    font-size: 14px;
+    font-family: open Sans;
+    color: #353535;
+    transition: all .3s linear;
+
+}
+
+.two_btn h2 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    color: #353535;
+    transition: all .3s linear;
+}
+
+.inner_pera a:hover i,
+.inner_pera a:hover h2,
+.inner_pera a:hover h3 {
+    color: #ffffff;
+}
+
+
+/* 01 end banner area  */
+
+/*01 star banner slide */
+.banner_p .slick-dots {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner_p .slick-dots li {
+    margin: 15px 0;
+}
+
+.banner_p .slick-dots li button:nth-child(1) {
+    background: transparent;
+    color: #ffffff;
+    border: transparent;
+    font-size: 20px;
+}
+
+.banner_p .slick-dots li:nth-child(2) button,
+.banner_p .slick-dots li:nth-child(3) button {
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.banner_p .slick-dots li:nth-child(2) button:before,
+.banner_p .slick-dots li:nth-child(3) button:before {
+    content: '';
+    position: absolute;
+    left: 4.5px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    background: #744fa0;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.banner_p .slick-dots li:nth-child(2).slick-active button:before,
+.banner_p .slick-dots li:nth-child(3).slick-active button:before {
+    opacity: 1;
+}
+
+/*01 end banner slide */
+
+
+/*-------------------------------------------- the end of part 01 -------------------------------------*/
+
+/*--------------------------------------- the start about us part 02 ------------------------------------*/
+.left_abt_us {
+    margin-top: 131px;
+}
+
+.heading_about_us {}
+
+.heading_about_us h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.inner_img img {}
+
+.left_abt_us .all_pera_ab_us {
+    padding-top: 30px;
+}
+
+.left_abt_us p {
+    font-family: 'Raleway';
+    font-size: 14px;
+    color: #777777;
+    line-height: 24px;
+}
+
+.inner_ab_img {
+    padding-top: 80px;
+}
+
+.inner_ab_img img {
+    width: 100%;
+}
+
+/*----------------------------------------the end about us  part 02--------------------------------------*/
+
+
+/*-------------------------------------------- the start our awesome features part 03 -------------------------------*/
+.feature_wrap {
+    background: #f1f1f1;
+    margin-top: 80px;
+}
+
+.heading_awe_fea {
+    padding-top: 30px;
+}
+
+.heading_awe_fea h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.left_list {
+    padding-top: 30px;
+}
+
+.left_list ul {}
+
+.left_list ul li {
+    position: relative;
+    border-bottom: 1px solid #353535;
+    width: 270px;
+    padding-bottom: 12px;
+}
+
+.left_list ul li:hover {
+    border-bottom: 1px solid #744fa0;
+}
+
+.left_list ul li:hover i,
+.left_list ul li:hover h3,
+.left_list ul li:hover p {
+    color: #744fa0;
+    border: #744fa0;
+}
+
+.g-w {
+    width: 370px !important;
+}
+
+/* .left_list ul li::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    height: 1px;
+    width: 270px;
+    background: #353535;
+} */
+
+.left_list ul li a {
+    text-decoration: none;
+    line-height: 1;
+}
+
+.left_items {}
+
+.left_items i {
+    font-size: 42px;
+    color: #333333;
+    padding-right: 10px;
+}
+
+
+.left_items span {
+    display: block;
+}
+
+.left_items h3 {
+    color: #353535;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    transition: all .3s linear;
+
+}
+
+.left_items p {
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #777777;
+    width: 270px;
+    margin-top: 18px;
+    transition: all .3s linear;
+
+}
+
+.mid_img_awe {
+    margin-left: 46px;
+    padding-top: 30px;
+}
+
+.mid_img_awe img {}
+
+
+.right_head-pera {
+    text-align: right;
+    padding-top: 104px;
+}
+
+
+.right_head-pera h2 {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'raleway';
+}
+
+.right_head-pera p {
+    font-size: 14px;
+    font-family: open sans;
+    color: #777777;
+    line-height: 24px;
+    text-align: right;
+}
+
+
+
+
+
+/*-------------------------------------------- the end our awesome features part 03 --------------------------------*/
+
+
+
+/*---------------------------------------------the start of screenshots part 04----------------------------------------*/
+
+.heading_screenshots {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.heading_screenshots h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+
+
+
+.screenshots .slick-dots {
+    text-align: center;
+}
+
+.screenshots .slick-dots li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 33px;
+}
+
+.screenshots .slick-dots li:nth-child(1) button,
+.screenshots .slick-dots li:nth-child(2) button,
+.screenshots .slick-dots li:nth-child(3) button,
+.screenshots .slick-dots li:nth-child(4) button,
+.screenshots .slick-dots li:nth-child(5) button,
+.screenshots .slick-dots li:nth-child(6) button {
+    height: 18px;
+    width: 18px;
+    border: 3px solid #353535;
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+    font-size: 0;
+}
+
+
+.screenshots .slick-dots li:nth-child(1) button::before,
+.screenshots .slick-dots li:nth-child(2) button::before,
+.screenshots .slick-dots li:nth-child(3) button::before,
+.screenshots .slick-dots li:nth-child(4) button::before,
+.screenshots .slick-dots li:nth-child(5) button::before,
+.screenshots .slick-dots li:nth-child(6) button::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 6px;
+    height: 6px;
+    background: #744fa0;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+
+.screenshots .slick-dots li:nth-child(1).slick-active button,
+.screenshots .slick-dots li:nth-child(2).slick-active button,
+.screenshots .slick-dots li:nth-child(3).slick-active button,
+.screenshots .slick-dots li:nth-child(4).slick-active button,
+.screenshots .slick-dots li:nth-child(5).slick-active button,
+.screenshots .slick-dots li:nth-child(6).slick-active button {
+    border: 3px solid #744fa0;
+}
+
+.screenshots .slick-dots li:nth-child(1).slick-active button:before,
+.screenshots .slick-dots li:nth-child(2).slick-active button:before,
+.screenshots .slick-dots li:nth-child(3).slick-active button:before,
+.screenshots .slick-dots li:nth-child(4).slick-active button:before,
+.screenshots .slick-dots li:nth-child(5).slick-active button:before,
+.screenshots .slick-dots li:nth-child(6).slick-active button:before {
+    opacity: 1;
+}
+
+/*-------------------------------------------- the end of screenshots part 04 -----------------------------------------*/
+
+
+
+/*------------------------------------------- the start of watch video part 05 ----------------------------------------*/
+.heading_w_v {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.heading_w_v h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.watch_video {}
+
+.watch_video .watch_wrap {
+    position: relative;
+}
+
+.watch_video .watch_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .70);
+}
+
+.watch_overlay ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.watch_overlay ul li {
+    text-align: center;
+}
+
+.watch_overlay ul li a {
+    color: #f1f1f1;
+    font-size: 39px;
+}
+
+.watch_overlay ul li i {
+    font-size: 70px;
+}
+
+/*--------------------------------------------the end of part watch video 05 ----------------------------------------*/
+
+
+
+/*------------------------------------------------- the start of pricing plan  part 06 --------------------------------------------*/
+
+
+
+.heading_price {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.heading_price h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.one-plan {
+    transition: all .3s linear;
+}
+
+.free_plan {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 24px 0;
+    transition: all .3s linear;
+}
+
+.free_plan h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    color: #353535;
+}
+
+.pr_month {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.pr_month h2 {
+    color: #353535;
+    font-size: 47px;
+    font-weight: 800;
+    padding-top: 16px;
+    margin-bottom: -10px;
+}
+
+.pr_month span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.pr_month p {
+    color: #555555;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Raleway';
+}
+
+.list_plan {
+    background: #f1f1f1;
+    margin-top: 20px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.list_plan ul {}
+
+.list_plan ul li {
+    padding-top: 20px;
+}
+
+.list_plan button {
+    border: 1px solid #353535;
+    background: #ffffff;
+    padding: 10px 20px;
+    margin-top: -50px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 3px;
+    transition: all .3s linear;
+
+}
+
+.one-plan:hover button {
+    background: #744fa0;
+    color: #ffff;
+}
+
+.one-plan:hover .free_plan {
+    background: #744fa0;
+}
+
+/*------------------------------------------------- the end of pricing plan part 06 --------------------------------------------*/
+
+
+
+/*------------------------------------------------- the start of awesome team part 07--------------------------------------------*/
+.heading_awe_team {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.heading_awe_team h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+
+}
+
+
+.aw-tm_img {
+    transition: all .3s linear;
+    margin-top: 116px;
+}
+
+.aw-tm_img:hover {
+    margin-top: 30px;
+}
+
+
+.img {
+    position: relative;
+}
+
+.img .aw_overlay {
+    background: rgba(0, 0, 0, .70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.img:hover .aw_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.aw-icon a {
+    color: #353535;
+    transition: all .3s linear;
+    font-size: 24px;
+}
+
+.aw-icon a:hover {
+    background-color: #744fa0;
+    color: #ffffff;
+}
+
+.aw-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aw-icon a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+.team_text {
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    transform: translateY(-100%);
+    z-index: -9999;
+    transition: all .3s linear;
+}
+
+.aw-tm_img:hover .team_text {
+    transform: translateY(0);
+}
+
+.team_text h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #353535;
+}
+
+.team_text span {
+    font-size: 15px;
+    font-family: open sans;
+    color: #555555;
+    display: block;
+    padding-top: 15px;
+}
+
+.team_text p {
+    font-family: open sans;
+    font-size: 14px;
+    color: #777777;
+    line-height: 24px;
+    padding-top: 25px;
+}
+
+
+/*------------------------------------------------- the end of awesome team part 07 --------------------------------------------*/
+
+
+/*------------------------------------------------- the start of user feed back part 08 --------------------------------------------*/
+
+.fb_area {
+    margin-top: 32px;
+}
+
+.fb_overlay {
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.user_part {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.user_part h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+.fb_text {
+    margin-top: 28px;
+    margin-bottom: 42px;
+    padding: 32px 70px 18px 70px;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.fb_text::before {
+    content: '';
+    background: #ffffff;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.fb_text p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
+
+.star_icon i {
+    font-size: 14px;
+    line-height: 20px;
+    color: #744fa0;
+    text-align: center;
+}
+
+.fb_text h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #353535;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-align: center;
+}
+
+.fb_text span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.fb_img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #744fa0;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    transition: all .3s linear;
+    transform: scale(.5);
+}
+
+.fb_img img {
+    width: 100%;
+}
+
+
+.fb_img_slide {
+    padding-bottom: 77px;
+}
+
+
+
+/* .wrap_fb_img::before {
+    content: '';
+
+} */
+.wrap_fb_img.slick-center .fb_img {
+    width: 150px;
+    height: 150px;
+    transform: scale(1);
+}
+
+
+
+
+.fb_area .slick-dots {
+    text-align: center;
+}
+
+.fb_area .slick-dots li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 33px;
+}
+
+.fb_area .slick-dots li:nth-child(1) button,
+.fb_area .slick-dots li:nth-child(2) button,
+.fb_area .slick-dots li:nth-child(3) button,
+.fb_area .slick-dots li:nth-child(4) button {
+    height: 18px;
+    width: 18px;
+    border: 3px solid #353535;
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+    font-size: 0;
+}
+
+
+.fb_area .slick-dots li:nth-child(1) button::before,
+.fb_area .slick-dots li:nth-child(2) button::before,
+.fb_area .slick-dots li:nth-child(3) button::before,
+.fb_area .slick-dots li:nth-child(4) button::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 6px;
+    height: 6px;
+    background: #744fa0;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.fb_area .slick-dots li:nth-child(1).slick-active button:before,
+.fb_area .slick-dots li:nth-child(2).slick-active button:before,
+.fb_area .slick-dots li:nth-child(3).slick-active button:before,
+.fb_area .slick-dots li:nth-child(4).slick-active button:before {
+    opacity: 1;
+}
+
+
+.fb_area .slick-dots li:nth-child(1).slick-active button,
+.fb_area .slick-dots li:nth-child(2).slick-active button,
+.fb_area .slick-dots li:nth-child(3).slick-active button,
+.fb_area .slick-dots li:nth-child(4).slick-active button {
+    border: 3px solid #744fa0;
+}
+
+
+
+
+
+
+/*------------------------------------------------- the end of user feed back part 08 --------------------------------------------*/
+
+
+
+/* ------------------------------------------------- the start of get in touch part 09 --------------------------------------------*/
+
+.get_in_touch {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.get_in_touch h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #353535;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+
+.get_in_touch form .same {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.get_in_touch form textarea {
+    margin-top: 30px;
+}
+
+.get_in_touch form .message {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 175px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #000000;
+}
+
+.sub-btn {
+    margin-top: 30px;
+}
+
+.sub-btn .button {
+    border: 0;
+    padding: 10px 20px;
+    background: transparent;
+    background: #744fa0;
+    color: #ffff;
+    border-radius: 3px;
+}
+
+
+
+/*------------------------------------------------- the end of get in touch part 09--------------------------------------------*/
+.last_appon {
+    margin-top: 80px;
+}
+
+.appon_bg {
+    background: #353535;
+}
+
+.appon_bg .image_head {
+    padding-top: 30px;
+}
+
+.icon_appon a {
+    height: 50px;
+    width: 50px;
+    background: #ffffff;
+    color: #353535;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: all .3s linear;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.icon_appon a:hover {
+    background: #744fa0;
+    color: #f1f1f1;
+}
+
+.last_app {
+    padding-top: 30px;
+}
+
+.last_app p {
+    color: #f1f1f1;
+}
+
+.last_app .app {
+    color: #744fa0;
+}
+
+/* *------------------------------------------------- the start of appon last part 10 --------------------------------------------*/
+
+
+
+
+/*------------------------------------------------- the end of appon last part 10 --------------------------------------------*/
